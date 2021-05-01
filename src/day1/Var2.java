@@ -18,6 +18,5 @@ public class Var2 {
 		
 		fullName = "John Doe";
 		System.out.println(fullName); // John Doe
-		// BREAK TILL 2:10 PM EST
 	}
 }
