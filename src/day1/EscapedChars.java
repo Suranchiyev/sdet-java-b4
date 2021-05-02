@@ -6,6 +6,5 @@ public class EscapedChars {
 		System.out.println("Hello\tWorld");
 		System.out.println("\"Hello, World\"");
 		System.out.println("\\");
-		
 	}
 }
