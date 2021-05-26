@@ -3,7 +3,7 @@ package officehours1;
 public class ConditionalBranching {
 	public static void main(String[] args) {		
 		// true or false
-		boolean b = true;
+		boolean b = false;
 		
 		// Comparison operators
 		// == to compare primitives on equality
