@@ -1,0 +1,16 @@
+Abstraction lets us focus on what object does instead of how it does
+by using abstract methods. 
+- Both abstract class and interface cannot initialize directly.
+- Both abstract class and interface have abstract methods without body.
+- First concrete class that will extends/implements must implement(Override)
+  all abstract methods.
+  
+ Inteface vs Abstract class
+ - Abstract class can have regular methods and properties but
+   interface can have only abstract method except default and static
+ - We can extend only one abstract class at time but we can implmenet
+   multiple interfaces.
+ - extends keyword for abstraction
+   implements keyword for interface
+       
+

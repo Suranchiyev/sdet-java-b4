@@ -26,7 +26,25 @@ public class Project {
 	 * 
 	 */
 	public List<String> listPermissions(int userId) {
-	      return null;
+		List<String> userRoles = new ArrayList<>();
+
+		for (User user : users) {
+			if (user.id == userId) {
+				userRoles = user.roles;
+			}
+		}
+
+		List<String> resPermissions = new ArrayList<>();
+
+		for (String role : userRoles) {
+			for (Permission per : permissions) {
+				if (role.equals(per.role) && per.active) {
+					resPermissions.add(per.name);
+				}
+			}
+		}
+
+		return resPermissions;
 	}
 	
 	/**
@@ -40,8 +58,8 @@ public class Project {
 	 * cannot be found, return false
 	 */
 	public boolean checkPermitted(String permissionName, int userId) {
-		// TODO your code goes here
-		return false;
+		List<String> userPermissions = listPermissions(userId);
+		return userPermissions.contains(permissionName);
 	}
 }
 

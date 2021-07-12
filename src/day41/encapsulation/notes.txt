@@ -1,0 +1,9 @@
+
+What is an encapsulation in Java?
+It's of the OOP concepts and encapsulation is data hiding mechanism.
+
+How do we achieve encapsulation?
+By making private the properties and providing public getters and setters.
+
+We cannot return original reference for mutable objects,
+we always need to return copy of it.

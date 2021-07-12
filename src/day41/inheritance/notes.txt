@@ -1,0 +1,35 @@
+	
+What's an inheritance in Java?
+Inheritance is one the OOP concepts in Java. Where one class can inherit visible
+properties/methods of another class. Parent(super) child(base class) relationship 
+between classes.
+
+Why do we need to use inheritance?
+To reuse the code.
+
+java.lang.Object class is super class of every class in java.
+
+What's method overriding?
+Method overriding is when child class overrides the methods of parent class.
+- method signatures should same(name, return type, arguments)
+- child class method should have same access modifier or more visible
+- if parent class method throws exception then child class can throw same exception
+  or throw smaller exception(or no exception at all).
+
+
+Overloading vs Overriding? 
+	- Overloading will take a place in the same class where methods have same name
+	  but different arguments(type, number of args, order)
+	- Overriding when child class overrides parent class methods.  
+
+
+Java is single-inherited language. We can inherit one class at time.
+// Student extends Person, Employee
+Why java is allowing only single inheritance? There is diamond problem. 
+They solve this problem by using interface by letting to implement multiple 
+interfaces at the same time.
+
+
+
+
+	

@@ -1,0 +1,18 @@
+Polymorphism is an ability of an object to take many different forms
+
+List<String> list = new ArrayList<>();
+
+Parent obj = new Child();
+Person p1 = new Employee();
+
+Interface obj = new ConcreteClass();
+BrowserAutomation obj = new ChromeAutomation();
+
+ReferenceType ref = new ActualObject();
+
+ReferenceType will decide what properties and method
+available for ref.
+
+If actual object class will override some methods from Reference type
+when calling these method, the overridden method will be invoked.
+We call this runtime polymorphism.
