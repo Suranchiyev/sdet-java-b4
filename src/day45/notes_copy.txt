@@ -1,0 +1,32 @@
+	1. What type of exceptions do you know in Java?
+	   Runtime, Checked, Error	
+	2. What's the difference between runtime and checked exceptions?
+       Runtime exceptions are not require to hanlde.
+       Checked exceptions we must handle or decare it.
+	3. What's error in java?
+  	   Errors handled by JVM, and we don't throw the error and never 
+  	   handle them.
+	4. How do you handle an exception in Java?
+ 	   We hanlde exceptions in java by using try catch statement
+ 	   try {
+ 	   	  // code that might throw exception
+ 	   } catch (TypeOfException e) {
+ 	   	  // code to handle it.
+ 	   }
+	5. Can we have multiple catch blocks in try catch statement?
+	   Yes, we can. The smaller(more specific) exception type should go first.
+	6. What does finally block do?
+	   finally block always executed. Usually we close resources and do some clean up.	
+	7. What's exception declaration?
+	   Exception declaration when we put 'throws' in the method declaration. If code inside the method throw/throws you can delcare it and the client code that will use your method should handle it or decare it as well.
+	   public void print(int i) throws Exception {
+	   		if (i % 2 == 0) {
+	   			throw new Exception();
+	   		}
+	   		System.out.println(i);
+	   }
+	   ---
+	   public static void main(String[] args) throws Exception {
+	   		print(5);
+			print(2); // Exception
+	   }

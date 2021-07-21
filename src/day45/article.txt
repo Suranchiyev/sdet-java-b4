@@ -1,0 +1,5 @@
+File and File System
+In the previous article, we said we can imagine computer memory as a big canvas. Now, somehow we need to manage this one big piece of data. The way we manage is by dividing them into files and organizing all the files as a file system.
+There are two types of files. The first one is a directory(folder). The directory can have other files inside. Remember we can refer to directories as files as well. The second type is an actual file. This type of format has a great number of formats(.txt, pdf, png). In fact, you even can create your own format.
+Every file has a header, body, and ending point of the file. The header mainly contains metadata(data about data) about a file. Things like the file format, how to read the file, size, who created it, etc. The body will contain the actual content of the file. The ending part indicates that there is no more content of the file.
+Each file has a specific path in the file system. A file path specifies a unique location in a file system.
